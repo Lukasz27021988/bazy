@@ -1,0 +1,76 @@
+-- Wstawianie danych do tabeli 'autor'
+INSERT INTO `autor` (`id_autora`, `nazwisko`, `imie`, `narodowosc`, `okres_tworzenia`, `jezyk`, `rodzaj_tworczosci`, `osiagniecia`) VALUES
+(1, 'Kowalski', 'Jan', 'Polska', 'XX wiek', 'polski', 'powieści obyczajowe', 'nagroda literacka'),
+(2, 'Smith', 'John', 'USA', 'XXI wiek', 'angielski', 'thrillery', 'bestseller New York Times'),
+(3, 'Dumas', 'Alexandre', 'Francja', 'XIX wiek', 'francuski', 'powieści przygodowe', 'wieczna klasyka'),
+(4, 'Tokarczuk', 'Olga', 'Polska', 'XXI wiek', 'polski', 'proza', 'Nobel 2018'),
+(5, 'Rowling', 'J.K.', 'Wielka Brytania', 'XXI wiek', 'angielski', 'fantasy', 'Harry Potter'),
+(6, 'Hemingway', 'Ernest', 'USA', 'XX wiek', 'angielski', 'powieści', 'Pulitzer'),
+(7, 'Orwell', 'George', 'Wielka Brytania', 'XX wiek', 'angielski', 'dystopia', 'Rok 1984'),
+(8, 'Sapkowski', 'Andrzej', 'Polska', 'XXI wiek', 'polski', 'fantasy', 'Wiedźmin'),
+(9, 'Austen', 'Jane', 'Wielka Brytania', 'XIX wiek', 'angielski', 'romanse', 'Duma i uprzedzenie'),
+(10, 'King', 'Stephen', 'USA', 'XXI wiek', 'angielski', 'horror', 'bestseller').
+
+-- Wstawianie danych do tabeli 'faktura'
+INSERT INTO `faktura` (`nr_faktury`, `sposob_platnosci`, `data_wystawienia_faktury`) VALUES
+(1, 'gotówka', '2024-12-01'),
+(2, 'karta płatnicza', '2024-12-05'),
+(3, 'przelew', '2024-12-07'),
+(4, 'BLIK', '2024-12-10'),
+(5, 'gotówka', '2024-12-11'),
+(6, 'karta płatnicza', '2024-12-12'),
+(7, 'przelew', '2024-12-13'),
+(8, 'BLIK', '2024-12-14'),
+(9, 'gotówka', '2024-12-15'),
+(10, 'karta płatnicza', '2024-12-16');
+
+-- Wstawianie danych do tabeli 'klient'
+INSERT INTO `klient` (`id_klient`, `nazwisko`, `imie`, `kod_pocztowy`, `miejscowosc`, `ulica`, `nr_domu`, `PESEL`, `telefon`, `adres_e_mail`) VALUES
+(1, 'Nowakowski', 'Adam', '00-123', 'Gdańsk', 'Grunwaldzka', '10', '99010112345', '789123456', 'adam@nowakowski.pl'),
+(2, 'Wiśniewska', 'Anna', '01-234', 'Poznań', 'Półwiejska', '20b', '89020254321', '654321789', 'anna.w@onet.pl'),
+(3, 'Kowalczyk', 'Marta', '02-345', 'Łódź', 'Piotrkowska', '5/3', '97030367890', '321987654', 'marta.k@interia.pl'),
+(4, 'Lewandowski', 'Robert', '03-456', 'Warszawa', 'Marszałkowska', '15a', '96040478901', '987654321', 'robert.l@gmail.com'),
+(5, 'Zieliński', 'Michał', '04-567', 'Kraków', 'Wadowicka', '7c', '94050501234', '888777666', 'michal.z@wp.pl'),
+(6, 'Kamińska', 'Ewa', '05-678', 'Wrocław', 'Legnicka', '11', '93060609876', '777888999', 'ewa.k@onet.pl'),
+(7, 'Górski', 'Janusz', '06-789', 'Gdynia', 'Świętojańska', '1', '92070712345', '666555444', 'janusz.g@wp.pl'),
+(8, 'Majewska', 'Katarzyna', '07-890', 'Sopot', 'Monte Cassino', '3/2', '91080898765', '555444333', 'katarzyna.m@gmail.com'),
+(9, 'Czarnecki', 'Tomasz', '08-901', 'Szczecin', 'Jagiellońska', '8b', '90090987654', '444333222', 'tomasz.c@interia.pl'),
+(10, 'Baran', 'Zofia', '09-012', 'Bydgoszcz', 'Dworcowa', '15', '89101076543', '333222111', 'zofia.b@gmail.com');
+
+-- Wstawianie danych do tabeli 'ksiazka'
+INSERT INTO `ksiazka` (`id_ksiazki`, `tytul`, `gatunek`, `rok_wydania`, `jezyk`, `id_autora`) VALUES
+(1, 'Wiedźmin: Ostatnie Życzenie', 'Fantasy', 1993, 'polski', 8),
+(2, 'Harry Potter i Kamień Filozoficzny', 'Fantasy', 1997, 'angielski', 5),
+(3, 'Rok 1984', 'Dystopia', 1949, 'angielski', 7),
+(4, 'Duma i Uprzedzenie', 'Romans', 1813, 'angielski', 9),
+(5, 'Bastion', 'Horror', 1978, 'angielski', 10),
+(6, 'Stary Człowiek i Morze', 'Powieść', 1952, 'angielski', 6),
+(7, 'Gra o Tron', 'Fantasy', 1996, 'angielski', 2),
+(8, 'Kod Leonarda Da Vinci', 'Thriller', 2003, 'angielski', 3),
+(9, 'Zbrodnia i Kara', 'Powieść', 1866, 'rosyjski', 4),
+(10, 'Lalka', 'Powieść', 1890, 'polski', 1);
+-- Wstawianie danych do tabeli 'zamowienie'
+INSERT INTO `zamowienie` (`id_zamowienia`, `data_zlozenia_zamowienia`, `data_wyslania`, `koszt_wysylki`, `id_klient`, `id_faktury`) VALUES
+(1, '2024-12-01', '2024-12-02', 15.00, 1, 1),
+(2, '2024-12-02', '2024-12-03', 12.50, 2, 2),
+(3, '2024-12-03', '2024-12-04', 10.00, 3, 3),
+(4, '2024-12-04', '2024-12-05', 20.00, 4, 4),
+(5, '2024-12-05', '2024-12-06', 25.00, 5, 5),
+(6, '2024-12-06', '2024-12-07', 18.00, 6, 6),
+(7, '2024-12-07', '2024-12-08', 22.00, 7, 7),
+(8, '2024-12-08', '2024-12-09', 15.50, 8, 8),
+(9, '2024-12-09', '2024-12-10', 30.00, 9, 9),
+(10, '2024-12-10', '2024-12-11', 12.00, 10, 10);
+
+-- Wstawianie danych do tabeli 'rejestracja_zamowienia'
+INSERT INTO `rejestracja_zamowienia` (`id_rejestracji`, `id_zamowienia`, `id_ksiazki`, `ilosc`, `cena_jednostkowa`) VALUES
+(1, 1, 1, 1, 39.99),
+(2, 1, 2, 1, 29.99),
+(3, 2, 3, 2, 19.99),
+(4, 2, 4, 1, 24.99),
+(5, 3, 5, 1, 34.99),
+(6, 3, 6, 2, 22.99),
+(7, 4, 7, 1, 44.99),
+(8, 4, 8, 1, 49.99),
+(9, 5, 9, 3, 14.99),
+(10, 5, 10, 1, 39.99);
