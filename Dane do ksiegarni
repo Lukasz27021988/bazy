@@ -13,16 +13,17 @@ INSERT INTO `autor` (`id_autora`, `nazwisko`, `imie`, `narodowosc`, `okres_tworz
 
 -- Wstawianie danych do tabeli 'faktura'
 INSERT INTO `faktura` (`nr_faktury`, `sposob_platnosci`, `data_wystawienia_faktury`) VALUES
-(1, 'gotówka', '2024-12-01'),
-(2, 'karta płatnicza', '2024-12-05'),
-(3, 'przelew', '2024-12-07'),
-(4, 'BLIK', '2024-12-10'),
-(5, 'gotówka', '2024-12-11'),
-(6, 'karta płatnicza', '2024-12-12'),
-(7, 'przelew', '2024-12-13'),
-(8, 'BLIK', '2024-12-14'),
-(9, 'gotówka', '2024-12-15'),
-(10, 'karta płatnicza', '2024-12-16');
+(1, 'gotówka', '2022-01-15'),
+(2, 'karta płatnicza', '2023-05-10'),
+(3, 'przelew', '2021-07-25'),
+(4, 'BLIK', '2024-02-02'),
+(5, 'gotówka', '2020-11-30'),
+(6, 'karta płatnicza', '2023-10-17'),
+(7, 'przelew', '2022-09-13'),
+(8, 'BLIK', '2021-03-04'),
+(9, 'gotówka', '2024-05-22'),
+(10, 'karta płatnicza', '2020-06-18');
+
 
 -- Wstawianie danych do tabeli 'klient'
 INSERT INTO `klient` (`id_klient`, `nazwisko`, `imie`, `kod_pocztowy`, `miejscowosc`, `ulica`, `nr_domu`, `PESEL`, `telefon`, `adres_e_mail`) VALUES
@@ -49,18 +50,20 @@ INSERT INTO `ksiazka` (`id_ksiazki`, `tytul`, `gatunek`, `rok_wydania`, `jezyk`,
 (8, 'Kod Leonarda Da Vinci', 'Thriller', 2003, 'angielski', 3),
 (9, 'Zbrodnia i Kara', 'Powieść', 1866, 'rosyjski', 4),
 (10, 'Lalka', 'Powieść', 1890, 'polski', 1);
+
 -- Wstawianie danych do tabeli 'zamowienie'
-INSERT INTO `zamowienie` (`id_zamowienia`, `data_zlozenia_zamowienia`, `data_wyslania`, `koszt_wysylki`, `id_klient`, `id_faktury`) VALUES
-(1, '2023-03-12', '2024-07-25', 15.00, 1, 1),
-(2, '2021-08-05', '2023-02-18', 12.50, 2, 2),
-(3, '2020-11-22', '2022-06-30', 10.00, 3, 3),
-(4, '2019-04-15', '2020-09-10', 20.00, 4, 4),
-(5, '2018-07-07', '2019-03-22', 25.00, 5, 5),
-(6, '2017-02-10', '2018-08-14', 18.00, 6, 6),
-(7, '2016-09-19', '2017-12-05', 22.00, 7, 7),
-(8, '2015-06-01', '2016-10-28', 15.50, 8, 8),
-(9, '2014-12-30', '2015-05-20', 30.00, 9, 9),
-(10, '2013-01-25', '2014-04-13', 12.00, 10, 10);
+INSERT INTO `zamowienia` (`id_zamowienia`, `data_zlozenia_zamowienia`, `data_wyslania`, `koszt_wysylki`, `id_klient`, `id_faktury`) VALUES
+(1, '2023-08-15', '2023-11-01', 15.00, 1, 1),
+(2, '2024-05-02', '2024-07-12', 12.50, 6, 2),
+(3, '2020-09-10', '2020-12-01', 10.00, 3, 3),
+(4, '2023-09-25', '2023-12-10', 20.00, 4, 4),
+(5, '2021-10-03', '2021-12-01', 25.00, 5, 5),
+(6, '2023-11-11', '2023-12-07', 18.00, 1, 6),
+(7, '2024-02-10', '2024-04-15', 22.00, 5, 7),
+(8, '2023-01-05', '2023-03-28', 15.50, 3, 8),
+(9, '2022-11-01', '2023-01-20', 30.00, 4, 9),
+(10, '2023-07-15', '2023-10-10', 12.00, 6, 10);
+
 
 -- Wstawianie danych do tabeli 'rejestracja_zamowienia'
 INSERT INTO `rejestracja_zamowienia` (`id_rejestracji`, `id_zamowienia`, `id_ksiazki`, `ilosc`, `cena_jednostkowa`) VALUES
