@@ -1,5 +1,5 @@
 -- Wstawianie danych do tabeli 'autor'
-INSERT INTO `autor` (`id_autora`, `nazwisko`, `imie`, `narodowosc`, `okres_tworzenia`, `jezyk`, `rodzaj_tworczosci`, `osiagniecia`) VALUES
+INSERT INTO `autor` (`id_autora`, `nazwisko`, `imie`, `narodowosc`, `okres_tworczosci`, `jezyk`, `rodzaj_tworczosci`, `osiagniecia`) VALUES
 (1, 'Kowalski', 'Jan', 'Polska', 'XX wiek', 'polski', 'powieści obyczajowe', 'nagroda literacka'),
 (2, 'Smith', 'John', 'USA', 'XXI wiek', 'angielski', 'thrillery', 'bestseller New York Times'),
 (3, 'Dumas', 'Alexandre', 'Francja', 'XIX wiek', 'francuski', 'powieści przygodowe', 'wieczna klasyka'),
@@ -9,7 +9,7 @@ INSERT INTO `autor` (`id_autora`, `nazwisko`, `imie`, `narodowosc`, `okres_tworz
 (7, 'Orwell', 'George', 'Wielka Brytania', 'XX wiek', 'angielski', 'dystopia', 'Rok 1984'),
 (8, 'Sapkowski', 'Andrzej', 'Polska', 'XXI wiek', 'polski', 'fantasy', 'Wiedźmin'),
 (9, 'Austen', 'Jane', 'Wielka Brytania', 'XIX wiek', 'angielski', 'romanse', 'Duma i uprzedzenie'),
-(10, 'King', 'Stephen', 'USA', 'XXI wiek', 'angielski', 'horror', 'bestseller').
+(10, 'King', 'Stephen', 'USA', 'XXI wiek', 'angielski', 'horror', 'bestseller');
 
 -- Wstawianie danych do tabeli 'faktura'
 INSERT INTO `faktura` (`nr_faktury`, `sposob_platnosci`, `data_wystawienia_faktury`) VALUES
