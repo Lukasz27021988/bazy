@@ -1,12 +1,25 @@
-Dostawcy
-Nazwa,Kod pocztowy,Miasto,Ulica,Nr posesji,Osoba kontaktowa,Nr telefonu kontaktowego
-Firma ABC,12-345,Warszawa,Aleja Jerozolimskie,23,Michał Kowalski,500-123-456
-Firma XYZ,67-890,Kraków,Ul. Piłsudskiego,12,Anna Nowak,600-234-567
-Firma Delta,15-678,Łódź,Ul. Wrocławska,34,Jan Wiśniewski,700-345-678
-Firma Sigma,50-123,Poznań,Ul. Mickiewicza,45,Katarzyna Zielińska,800-456-789
-Firma Omega,87-654,Wrocław,Ul. Krucza,9,Tomasz Wieczorek,900-567-890
-Firma Beta,33-987,Gdańsk,Ul. Słowackiego,56,Julia Nowicka,600-678-901
-Firma Gamma,21-234,Katowice,Ul. Kwiatowa,11,Piotr Leśniak,500-789-012
-Firma Epsilon,65-432,Bydgoszcz,Ul. Lechitów,7,Magdalena Wójcik,700-890-123
-Firma Theta,14-567,Lublin,Ul. Konstytucji,33,Paweł Kaczmarek,800-901-234
-Firma Zeta,42-345,Opole,Ul. Cegielniana,8,Agnieszka Ślusarska,900-012-345
+-- Wstawianie danych do tabeli 'klient'
+"Tomasz";"Tomaszewski";"12215";"Kraków";"Wiśniowa";"32/4";3;"2134213421";"23432432432"
+"Michał";"Kowalski";"12345";"Warszawa";"Aleja Jerozolimskie";"23";4;"1234567890";"44010212345"
+"Anna";"Nowak";"67890";"Kraków";"Ul. Piłsudskiego";"12";7;"2345678901";"55030567890"
+"Jan";"Wiśniewski";"15678";"Łódź";"Ul. Wrocławska";"34";10;"3456789012";"60050623456"
+"Katarzyna";"Zielińska";"50123";"Poznań";"Ul. Mickiewicza";"45";5;"4567890123";"67071034567"
+"Tomasz";"Wieczorek";"87654";"Wrocław";"Ul. Krucza";"9";1;"5678901234";"71091245678"
+"Julia";"Nowicka";"33987";"Gdańsk";"Ul. Słowackiego";"56";2;"6789012345";"75091356789"
+"Piotr";"Leśniak";"21234";"Katowice";"Ul. Kwiatowa";"11";3;"7890123456";"80051467890"
+"Magdalena";"Wójcik";"65432";"Bydgoszcz";"Ul. Lechitów";"7";8;"8901234567";"85021578901"
+"Paweł";"Kaczmarek";"14567";"Lublin";"Ul. Konstytucji";"33";6;"9012345678";"90031689012"
+"Agnieszka";"Ślusarska";"42345";"Opole";"Ul. Cegielniana";"8";9;"0123456789";"95041790123"
+
+-- Wstawianie danych do tabeli 'Dostawcy'
+Firma ABC;12-345;Warszawa;Aleja Jerozolimskie;23;Michał Kowalski;500-123-456
+Firma XYZ;67-890;Kraków;Ul. Piłsudskiego;12;Anna Nowak;600-234-567
+Firma Delta;15-678;Łódź;Ul. Wrocławska;34;Jan Wiśniewski;700-345-678
+Firma Sigma;50-123;Poznań;Ul. Mickiewicza;45;Katarzyna Zielińska;800-456-789
+Firma Omega;87-654;Wrocław;Ul. Krucza;9;Tomasz Wieczorek;900-567-890
+Firma Beta;33-987;Gdańsk;Ul. Słowackiego;56;Julia Nowicka;600-678-901
+Firma Gamma;21-234;Katowice;Ul. Kwiatowa;11;Piotr Leśniak;500-789-012
+Firma Epsilon;65-432;Bydgoszcz;Ul. Lechitów;7;Magdalena Wójcik;700-890-123
+Firma Theta;14-567;Lublin;Ul. Konstytucji;33;Paweł Kaczmarek;800-901-234
+Firma Zeta;42-345;Opole;Ul. Cegielniana;8;Agnieszka Ślusarska;900-012-345
+
