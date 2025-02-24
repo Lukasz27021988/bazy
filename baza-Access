@@ -1,25 +1,61 @@
 -- Wstawianie danych do tabeli 'klient'
-"Tomasz";"Tomaszewski";"12215";"Kraków";"Wiśniowa";"32/4";3;"2134213421";"23432432432"
-"Michał";"Kowalski";"12345";"Warszawa";"Aleja Jerozolimskie";"23";4;"1234567890";"44010212345"
-"Anna";"Nowak";"67890";"Kraków";"Ul. Piłsudskiego";"12";7;"2345678901";"55030567890"
-"Jan";"Wiśniewski";"15678";"Łódź";"Ul. Wrocławska";"34";10;"3456789012";"60050623456"
-"Katarzyna";"Zielińska";"50123";"Poznań";"Ul. Mickiewicza";"45";5;"4567890123";"67071034567"
-"Tomasz";"Wieczorek";"87654";"Wrocław";"Ul. Krucza";"9";1;"5678901234";"71091245678"
-"Julia";"Nowicka";"33987";"Gdańsk";"Ul. Słowackiego";"56";2;"6789012345";"75091356789"
-"Piotr";"Leśniak";"21234";"Katowice";"Ul. Kwiatowa";"11";3;"7890123456";"80051467890"
-"Magdalena";"Wójcik";"65432";"Bydgoszcz";"Ul. Lechitów";"7";8;"8901234567";"85021578901"
-"Paweł";"Kaczmarek";"14567";"Lublin";"Ul. Konstytucji";"33";6;"9012345678";"90031689012"
-"Agnieszka";"Ślusarska";"42345";"Opole";"Ul. Cegielniana";"8";9;"0123456789";"95041790123"
+;Tomasz;Tomaszewski;12-215;Kraków;Wiśniowa;32/4;3;2134213421;23432432432
+;Michał;Kowalski;12-345;Warszawa;Aleja Jerozolimskie;23;4;1234567890;44010212345
+;Anna;Nowak;67-890;Kraków;Ul. Piłsudskiego;12;7;2345678901;55030567890
+;Jan;Wiśniewski;15-678;Łódź;Ul. Wrocławska;34;10;3456789012;60050623456
+;Katarzyna;Zielińska;50-123;Poznań;Ul. Mickiewicza;45;5;4567890123;67071034567
+;Tomasz;Wieczorek;87-654;Wrocław;Ul. Krucza;9;1;5678901234;71091245678
+;Julia;Nowicka;33-987;Gdańsk;Ul. Słowackiego;56;2;6789012345;75091356789
+;Piotr;Leśniak;21-234;Katowice;Ul. Kwiatowa;11;3;7890123456;80051467890
+;Magdalena;Wójcik;65-432;Bydgoszcz;Ul. Lechitów;7;8;8901234567;85021578901
+;Paweł;Kaczmarek;14-567;Lublin;Ul. Konstytucji;33;6;9012345678;90031689012
+;Agnieszka;Ślusarska;42-345;Opole;Ul. Cegielniana;8;9;0123456789;95041790123
 
 -- Wstawianie danych do tabeli 'Dostawcy'
-Firma ABC;12-345;Warszawa;Aleja Jerozolimskie;23;Michał Kowalski;500-123-456
-Firma XYZ;67-890;Kraków;Ul. Piłsudskiego;12;Anna Nowak;600-234-567
-Firma Delta;15-678;Łódź;Ul. Wrocławska;34;Jan Wiśniewski;700-345-678
-Firma Sigma;50-123;Poznań;Ul. Mickiewicza;45;Katarzyna Zielińska;800-456-789
-Firma Omega;87-654;Wrocław;Ul. Krucza;9;Tomasz Wieczorek;900-567-890
-Firma Beta;33-987;Gdańsk;Ul. Słowackiego;56;Julia Nowicka;600-678-901
-Firma Gamma;21-234;Katowice;Ul. Kwiatowa;11;Piotr Leśniak;500-789-012
-Firma Epsilon;65-432;Bydgoszcz;Ul. Lechitów;7;Magdalena Wójcik;700-890-123
-Firma Theta;14-567;Lublin;Ul. Konstytucji;33;Paweł Kaczmarek;800-901-234
-Firma Zeta;42-345;Opole;Ul. Cegielniana;8;Agnieszka Ślusarska;900-012-345
+;Firma ABC;12-345;Warszawa;Aleja Jerozolimskie;23;Michał Kowalski;500-123-456
+;Firma XYZ;67-890;Kraków;Ul. Piłsudskiego;12;Anna Nowak;600-234-567
+;Firma Delta;15-678;Łódź;Ul. Wrocławska;34;Jan Wiśniewski;700-345-678
+;Firma Sigma;50-123;Poznań;Ul. Mickiewicza;45;Katarzyna Zielińska;800-456-789
+;Firma Omega;87-654;Wrocław;Ul. Krucza;9;Tomasz Wieczorek;900-567-890
+;Firma Beta;33-987;Gdańsk;Ul. Słowackiego;56;Julia Nowicka;600-678-901
+;Firma Gamma;21-234;Katowice;Ul. Kwiatowa;11;Piotr Leśniak;500-789-012
+;Firma Epsilon;65-432;Bydgoszcz;Ul. Lechitów;7;Magdalena Wójcik;700-890-123
+;Firma Theta;14-567;Lublin;Ul. Konstytucji;33;Paweł Kaczmarek;800-901-234
+;Firma Zeta;42-345;Opole;Ul. Cegielniana;8;Agnieszka Ślusarska;900-012-345
+
+-- Wstawianie danych do tabeli 'Kategoria'
+;Procesor;Jednostka centralna komputera, odpowiada za wykonywanie obliczeń.
+;Płyta główna;Główna płyta w komputerze, łączy wszystkie podzespoły.
+;Karta graficzna;Odpowiada za przetwarzanie grafiki i wyświetlanie obrazu.
+;Pamięć RAM;Tymczasowa pamięć operacyjna, przechowuje dane używane przez system i aplikacje.
+;Dysk twardy;Urządzenie do przechowywania danych, np. HDD lub SSD.
+;Zasilacz;Dostarcza energię do wszystkich podzespołów komputera.
+;Obudowa;Chroni komponenty komputera i zapewnia ich odpowiednie chłodzenie.
+;Chłodzenie CPU;System chłodzenia procesora, np. wentylatory lub chłodzenie wodne.
+;Monitor;Urządzenie wyświetlające obraz generowany przez komputer.
+;Klawiatura;Urządzenie wejściowe do wprowadzania danych i sterowania komputerem.
+
+-- Wstawianie danych do tabeli 'Podzespół'
+;Procesor Intel;Intel Core i7-13700K;Wydajny procesor do gier i pracy;1
+;Procesor AMD;AMD Ryzen 5 7600X;Nowoczesny procesor z architekturą Zen 4;1
+;Płyta główna ASUS; ASUS ROG Strix B550-F;Gamingowa płyta główna dla procesorów AMD;2
+;Płyta główna MSI;MSI Z790 Tomahawk;Płyta główna dla procesorów Intel 13. generacji;2
+;Karta graficzna NVIDIA;NVIDIA RTX 4070 Ti;Karta graficzna do gier i pracy kreatywnej;3
+;Karta graficzna AMD;AMD Radeon RX 7900 XT;Wysokowydajna karta graficzna dla entuzjastów;3
+;Pamięć RAM Corsair;Corsair Vengeance 32GB DDR5;Szybka pamięć RAM o taktowaniu 6000MHz;4
+;Pamięć RAM G.SKILL G.SKILL;G.SKILL Trident Z 16GB DDR4;Gamingowa pamięć RAM o niskim opóźnieniu;4
+;Dysk twardy Samsung;Samsung 980 Pro 1TB SSD;Superszybki dysk SSD NVMe do gier i pracy;5
+;Dysk twardy WD;WD Black 4TB HDD;Pojemny dysk HDD do przechowywania danych;5
+
+ImiePracownika;NazwiskoPracownika;DataZatrudnienia;UmowaOPrace;DataUrodzenia
+;Jan;Kowalski;2020-05-15;1;1985-08-22
+;Anna;Nowak;2021-09-01;1;1990-03-17
+;Marek;Wiśniewski;2019-11-12;0;1982-06-10
+;Karolina;Dąbrowska;2022-02-28;1;1995-12-05
+;Piotr;Zieliński;2018-07-20;1;1980-01-30
+;Magdalena;Szymańska;2023-06-10;0;1998-09-25
+;Tomasz;Wójcik;2017-04-03;1;1975-11-12
+Barbara;Lewandowska;2020-12-15;0;1993-05-08
+Paweł;Kamiński;2021-08-19;1;1988-07-03
+Katarzyna;Nowicka;2019-05-29;0;1992-04-14
 
