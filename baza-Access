@@ -47,7 +47,7 @@
 ;Dysk twardy Samsung;Samsung 980 Pro 1TB SSD;Superszybki dysk SSD NVMe do gier i pracy;5
 ;Dysk twardy WD;WD Black 4TB HDD;Pojemny dysk HDD do przechowywania danych;5
 
-ImiePracownika;NazwiskoPracownika;DataZatrudnienia;UmowaOPrace;DataUrodzenia
+-- Wstawianie danych do tabeli 'Pracownik'
 ;Jan;Kowalski;2020-05-15;1;1985-08-22
 ;Anna;Nowak;2021-09-01;1;1990-03-17
 ;Marek;Wiśniewski;2019-11-12;0;1982-06-10
