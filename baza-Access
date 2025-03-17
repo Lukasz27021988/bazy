@@ -1,6 +1,7 @@
 -- Wstawianie danych do tabeli 'klient'
 ;Tomasz;Tomaszewski;12-215;Kraków;Wiśniowa;32/4;3;2134213421;23432432432
 ;Michał;Kowalski;12-345;Warszawa;Aleja Jerozolimskie;23;4;1234567890;44010212345
+
 ;Anna;Nowak;67-890;Kraków;Ul. Piłsudskiego;12;7;2345678901;55030567890
 ;Jan;Wiśniewski;15-678;Łódź;Ul. Wrocławska;34;10;3456789012;60050623456
 ;Katarzyna;Zielińska;50-123;Poznań;Ul. Mickiewicza;45;5;4567890123;67071034567
@@ -59,3 +60,15 @@
 ;Paweł;Kamiński;2021-08-19;1;1988-07-03
 ;Katarzyna;Nowicka;2019-05-29;0;1992-04-14
 
+-- Wstawianie danych do tabeli 'Sztuka_pod'
+id_szt_pod	numer_ser	nr_fv	data_dostawy	cena_zakupu_n	cena_sprze_n	id_podzespol	id_dostawca
+1	1	FV2024/001	01.03.2024	1200,50	1500,00	1	1
+2	2	FV2024/002	05.03.2024	900,00	1150,00	2	2
+3	3	FV2024/003	10.03.2024	2500,75	3100,00	3	3
+4	4	FV2024/004	12.03.2024	2000,00	2700,00	4	4
+5	5	FV2024/005	15.03.2024	1800,90	2200,00	5	5
+6	6	FV2024/006	18.03.2024	500,00	650,00	1	6
+7	7	FV2024/007	20.03.2024	1300,00	1650,00	2	7
+8	8	FV2024/008	22.03.2024	2100,50	2600,00	3	8
+9	9	FV2024/009	25.03.2024	1550,75	1950,00	4	9
+10	10	FV2024/010	28.03.2024	1700,00	2100,00	5	10
